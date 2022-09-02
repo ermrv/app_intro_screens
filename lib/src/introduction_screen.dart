@@ -462,11 +462,11 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                   child: Row(
                     children: [
                       Expanded(
-                        flex: widget.skipOrBackFlex,
+                        flex: 1,
                         child: leftBtn ?? const SizedBox(),
                       ),
                       Expanded(
-                        flex: widget.dotsFlex,
+                        flex: 5,
                         child: Center(
                           child: widget.isProgress
                               ? Semantics(
@@ -488,7 +488,7 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                         ),
                       ),
                       Expanded(
-                        flex: widget.nextFlex,
+                        flex: 1,
                         child: rightBtn ?? const SizedBox(),
                       ),
                     ].asReversed(widget.rtl),
