@@ -462,7 +462,7 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                   child: Row(
                     children: [
                       SizedBox(
-                        width: 50.0,
+                        width: 60.0,
                         child: AnimatedSize(
                           duration: const Duration(milliseconds: 300),
                           child: leftBtn ?? const SizedBox(),
@@ -491,7 +491,7 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                         ),
                       ),
                       SizedBox(
-                        width: 50,
+                        width: 60,
                         child: AnimatedSize(
                           duration: const Duration(milliseconds: 500),
                           child: rightBtn ?? const SizedBox(),
