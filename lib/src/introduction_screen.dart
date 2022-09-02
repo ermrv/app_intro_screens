@@ -461,8 +461,8 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                   decoration: widget.dotsContainerDecorator,
                   child: Row(
                     children: [
-                      Expanded(
-                        flex: 1,
+                      SizedBox(
+                        width: 70.0,
                         child: leftBtn ?? const SizedBox(),
                       ),
                       Expanded(
@@ -487,8 +487,8 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                               : const SizedBox(),
                         ),
                       ),
-                      Expanded(
-                        flex: 1,
+                      SizedBox(
+                        width: 70,
                         child: rightBtn ?? const SizedBox(),
                       ),
                     ].asReversed(widget.rtl),
