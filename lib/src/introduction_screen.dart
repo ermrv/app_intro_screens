@@ -462,8 +462,11 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                   child: Row(
                     children: [
                       SizedBox(
-                        width: 70.0,
-                        child: leftBtn ?? const SizedBox(),
+                        width: 50.0,
+                        child: AnimatedSize(
+                          duration: const Duration(milliseconds: 300),
+                          child: leftBtn ?? const SizedBox(),
+                        ),
                       ),
                       Expanded(
                         flex: 5,
@@ -488,8 +491,11 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                         ),
                       ),
                       SizedBox(
-                        width: 70,
-                        child: rightBtn ?? const SizedBox(),
+                        width: 50,
+                        child: AnimatedSize(
+                          duration: const Duration(milliseconds: 500),
+                          child: rightBtn ?? const SizedBox(),
+                        ),
                       ),
                     ].asReversed(widget.rtl),
                   ),
